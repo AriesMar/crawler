@@ -1,0 +1,26 @@
+# 爬虫框架配置
+
+# 基础配置
+DEBUG=False
+LOG_LEVEL=INFO
+
+# 请求配置
+REQUEST_TIMEOUT=30
+REQUEST_DELAY=1.0
+MAX_RETRIES=3
+
+# 数据库配置
+DATABASE_URL=sqlite:///crawler.db
+MONGO_URI=mongodb://localhost:27017/
+MONGO_DB=crawler
+
+# 文件存储配置
+DOWNLOAD_PATH=./downloads
+
+# 代理配置
+USE_PROXY=False
+PROXY_LIST=http://proxy1:port,http://proxy2:port
+
+# 微信公众号配置
+WECHAT_COOKIE=your_wechat_cookie_here
+WECHAT_USER_AGENT=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 
